@@ -21,10 +21,12 @@
 # Date		Author	Version	Description				#
 #									#
 # 07/02/2018	MG	1.0.1	Initial release.			#
+# 09/02/2018	MG	1.0.2	Shorten directory names to reduce	#
+#				overall path length.			#
 #									#
 #########################################################################
 
-AC_REVISION([$Revision: 1.0.1 $])
+AC_REVISION([$Revision: 1.0.2 $])
 
 AC_PREREQ([2.65])
 
@@ -176,7 +178,7 @@ fi
 
 # Project Makefiles to create.
 AC_CONFIG_FILES([Makefile
-		source/progs/bash/Makefile
-		source/man/man1/Makefile])
+		src/prg/bash/Makefile
+		src/man/1/Makefile])
 
 AC_OUTPUT

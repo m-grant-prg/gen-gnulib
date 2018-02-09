@@ -19,8 +19,10 @@
 # Date		Author	Version	Description				#
 #									#
 # 07/02/2018	MG	1.0.1	Initial release.			#
+# 09/02/2018	MG	1.0.2	Shorten directory names to reduce	#
+#				overall path length.			#
 #									#
 #########################################################################
 
 
-SUBDIRS = source/progs/bash source/man/man1
+SUBDIRS = src/prg/bash src/man/1

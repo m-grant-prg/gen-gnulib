@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 #########################################################################
 #									#
-# Script ID: source/progs/bash/Makefile.am				#
+# Script ID: src/prg/bash/Makefile.am					#
 # Author: Copyright (C) 2018  Mark Grant				#
 #									#
 # Released under the GPLv3 only.					#
@@ -19,6 +19,8 @@
 # Date		Author	Version	Description				#
 #									#
 # 07/02/2018	MG	1.0.1	Initial release.			#
+# 09/02/2018	MG	1.0.2	Change file's header for new directory	#
+#				names.					#
 #									#
 #########################################################################
 
