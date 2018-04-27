@@ -1,3 +1,16 @@
+2018-04-27 v 1.0.3 Mark Grant <m.grant.prg@gmail.com>
+	*  Update to latest bootstrap.sh version v1.3.4
+	Change package versioning to a hard-coded configure value due to use
+	of source tarballs started with new use of github.
+	Add a make target srctarball to make a source tarball. This can be used
+	in the same way as github's source tarball enabling 1 package methodolgy
+	irrespective of source repository.
+	Improve README file.
+	Track m4 directory but keep gitignore to ensure directory exists,
+	even if empty.
+	Use standard misc directory AOT docs.
+	gen-gnulib.sh remains at version 1.0.1
+
 2018-02-20 v 1.0.2 Mark Grant <m.grant.prg@gmail.com>
 	*  Add standard AutoTools bootstrap script.
 	Bring project structure up to latest standard.
