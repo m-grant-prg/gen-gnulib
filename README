@@ -23,6 +23,14 @@ gnulib-tool --import --dir=$basedir --source-base=src/prg/c/gen/lib \
 where basedir defaults to the current directory or is passed to the command as
 the 1 and only command line argument.
 
+N.B.
+----
+At a source modification / development level, this project expects to reside in
+a git environment. This manifests itself in 2 places:-
+1) ... .gitignore files are included in the source.
+2) ... The make target, 'srctarball', relies on the command 'git am' so it will
+	fail if git is not installed or it is not in a git repository.
+
 
 -------------------------------------------------
 2 ... AutoTools (configure and make) Installation
