@@ -1,3 +1,6 @@
+---------------------------
+Generate GNULIB Environment
+===========================
 --------
 Contents
 ========
@@ -36,19 +39,20 @@ a git environment. This manifests itself in 2 places:-
 2 ... AutoTools (configure and make) Installation
 =================================================
 
-1 ... Download either the source or distribution tarball (the .tar.gz file)
+a) ... Download either the source or distribution tarball (the .tar.gz file)
 	from:-
-	https://github.com/m-grant-prg/gen-gnulib/releases
 
-2 ... Extract the tarball preserving the directory structure.
+https://github.com/m-grant-prg/gen-gnulib/releases
 
-3 ... cd to the directory created.
+b) ... Extract the tarball preserving the directory structure.
 
-4 ... If you downloaded the source tarball type 'autoreconf -if'
+c) ... cd to the directory created.
 
-5 ... Type './configure'
+d) ... If you downloaded the source tarball type 'autoreconf -if'
 
-6 ... As root or sudo, type 'make install clean'
+e) ... Type './configure'
+
+f) ... As root or sudo, type 'make install clean'
 
 (Quote marks are for textual clarity only).
 
@@ -114,3 +118,4 @@ mutually exclusive.
 
 Options d debug, F distcheckfake and s sparse are enabled by configure so
 require option c config.
+
