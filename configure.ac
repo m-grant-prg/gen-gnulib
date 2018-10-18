@@ -52,7 +52,7 @@ AC_PREREQ([2.69])
 #
 ########################
 
-AC_INIT(Generate gnulib requirements Script, v1.0.4,
+AC_INIT(Generate gnulib requirements Script, v1.0.5,
 	m.grant.prg@gmail.com, gen-gnulib)
 
 AC_SUBST(pkgversion, $PACKAGE_VERSION)
