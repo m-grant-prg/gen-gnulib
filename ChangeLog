@@ -1,3 +1,8 @@
+2018-10-18 v 1.0.5 Mark Grant <m.grant.prg@gmail.com>
+	*  Add markdown symlink to README to improve presentation at GitHub.
+	Improve markdown layout in README.
+	gen-gnulib.sh still at v1.0.1
+
 2018-08-26 v 1.0.4 Mark Grant <m.grant.prg@gmail.com>
 	*  Multiple updates to project insfrastructure. No functional changes.
 	gen-gnulib.sh still at v1.0.1
