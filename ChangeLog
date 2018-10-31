@@ -1,3 +1,7 @@
+2018-10-31 v 1.0.6 Mark Grant <m.grant.prg@gmail.com>
+	*  srctarball to use -src- in filename
+	gen-gnulib.sh still at v1.0.1
+
 2018-10-18 v 1.0.5 Mark Grant <m.grant.prg@gmail.com>
 	*  Add markdown symlink to README to improve presentation at GitHub.
 	Improve markdown layout in README.
