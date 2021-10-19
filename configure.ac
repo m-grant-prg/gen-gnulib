@@ -97,6 +97,7 @@ AC_SUBST(pkgversion, $PACKAGE_VERSION)
 ########################
 
 AC_SUBST([edit], ["sed \
+		-e 's|@bashlocation[@]|\$(BASH)|g' \
 		-e 's|@pkgversion[@]|\$(pkgversion)|g' \
 		-e 's|@prefix[@]|\$(prefix)|g' \
 		-e 's|@exec_prefix[@]|\$(exec_prefix)|g' \
