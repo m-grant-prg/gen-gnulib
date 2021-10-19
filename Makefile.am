@@ -1,4 +1,3 @@
-#! /usr/bin/env bash
 #########################################################################
 #									#
 # Script ID: ./Makefile.am						#
@@ -39,6 +38,7 @@
 #				/usr/share/java must be accommodated,	#
 #				so set the configure flags to be used	#
 #				by make distcheck.			#
+#				Remove shebang.				#
 #									#
 #########################################################################
 
