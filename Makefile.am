@@ -27,7 +27,7 @@
 # 31/10/2018	MG	1.0.5	Change srctarball target to build with	#
 #				src between package name and version in	#
 #				filename.				#
-# 19/10/2021	MG	1.0.6	Change source tarball name to be the	#
+# 20/10/2021	MG	1.0.6	Change source tarball name to be the	#
 #				same as that in GitHub releases. This	#
 #				aids integrating with rpm generation.	#
 #				Add install of standard GNU files like	#
@@ -39,6 +39,7 @@
 #				so set the configure flags to be used	#
 #				by make distcheck.			#
 #				Remove shebang.				#
+#				Add misc directory to DIST.		#
 #									#
 #########################################################################
 
@@ -56,7 +57,7 @@ doc_DATA = AUTHORS ChangeLog COPYING NEWS README
 
 
 EXTRA_DIST = $(srcdir)/AUTHORS $(srcdir)/ChangeLog $(srcdir)/COPYING \
-		$(srcdir)/NEWS $(srcdir)/README
+	     $(srcdir)/NEWS $(srcdir)/README $(srcdir)/misc
 
 
 srctarball:
