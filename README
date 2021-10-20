@@ -10,9 +10,11 @@ Contents
 
 1 ... Project Description
 
-2 ... AutoTools (configure and make) Installation
+2 ... Normal Location of Script
 
-3 ... Utility Scripts
+3 ... AutoTools (configure and make) Installation
+
+4 ... Utility Scripts
 
 
 
@@ -38,8 +40,18 @@ a git environment. This manifests itself in 2 places:-
 will fail if git is not installed or it is not in a git repository.
 
 
+-------------------------------
+2 ... Normal Location of Script
+===============================
+
+It is envisaged that the script can be dropped in to a project root directory
+and invoked from there when necessary. This means that any project has a script
+to help build that project. It also means that it does not have to be installed
+as below.
+
+
 -------------------------------------------------
-2 ... AutoTools (configure and make) Installation
+3 ... AutoTools (configure and make) Installation
 =================================================
 
 a) ... Download either the source or distribution tarball (the .tar.gz file)
@@ -68,7 +80,7 @@ To uninstall the package:
 
 
 ---------------------
-3 ... Utility Scripts
+4 ... Utility Scripts
 =====================
 In the project root directory there is 1 helper script; bootstrap.sh.
 
