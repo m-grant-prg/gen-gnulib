@@ -74,7 +74,7 @@ AC_PREREQ([2.69])
 # can be used by ac output and / or the sed setup below to substitute bookmarks
 # in source files.
 #
-AC_INIT(gnulib Install Script, v1.0.6, m.grant.prg@gmail.com, gen-gnulib)
+AC_INIT(gnulib Install Script, v1.1.0, m.grant.prg@gmail.com, gen-gnulib)
 
 AC_MSG_NOTICE(initialisation and setup)
 
