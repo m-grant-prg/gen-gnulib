@@ -1,3 +1,24 @@
+2021-10-20 v1.1.0 Mark Grant <m.grant.prg@gmail.com>
+	* at: Add misc directory to DIST
+	at: Add normal usage setion to README
+	at: lxcu: Add lxc test build setup
+	man: Correct Copyright statement
+	at: Revamp configure.ac to current standard
+	at: Remove shebang.
+	at: Add configure distcheck flag
+	at: Install standard GNU files such as AUTHORS
+	at: Chamge source tarball name
+	at: Correct git command in README
+	at: Update bootstrap.sh section in README
+	at: Add Copyright to README
+	actions: Add github build test
+	git: Add gitattributes file
+	git: Add mailmap file
+	at: Upgrade bootstrap.sh to v1.4.9
+	bash: Overhaul script up to current standard
+	git: Update gitignore to v1.0.5
+	gen-gnulib.sh now at v1.0.2
+
 2018-10-31 v 1.0.6 Mark Grant <m.grant.prg@gmail.com>
 	*  srctarball to use -src- in filename
 	gen-gnulib.sh still at v1.0.1
