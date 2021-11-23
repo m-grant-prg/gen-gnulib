@@ -12,7 +12,7 @@
 # Author: Copyright (C) 2018, 2021  Mark Grant				#
 #									#
 # Released under the GPLv3 only.					#
-# SPDX-License-Identifier: GPL-3.0					#
+# SPDX-License-Identifier: GPL-3.0-only					#
 #									#
 # Purpose:								#
 # To simplify the running of daily apt-get maintenance commands.	#
@@ -55,6 +55,7 @@
 #									#
 # 07/02/2018	MG	1.0.1	Created.				#
 # 19/10/2021	MG	1.0.2	Major overhaul.				#
+# 23/11/2021	MG	1.0.3	Tighten SPDX tag.			#
 #									#
 #########################################################################
 
@@ -62,7 +63,7 @@
 ##################
 # Init variables #
 ##################
-readonly version=1.0.2				# Script version
+readonly version=1.0.3				# Script version
 readonly outputprefix="$(basename $0): "
 readonly packageversion=@pkgversion@		# Package version
 
