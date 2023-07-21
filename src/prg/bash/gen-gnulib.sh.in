@@ -57,6 +57,7 @@
 # 19/10/2021	MG	1.0.2	Major overhaul.				#
 # 23/11/2021	MG	1.0.3	Tighten SPDX tag.			#
 # 21/07/2023	MG	1.0.4	Correct Purpose statement above.	#
+#				Fix shellcheck warnings.		#
 #									#
 #########################################################################
 
@@ -106,7 +107,7 @@ output()
 # No return value.
 script_exit()
 {
-	exit $1
+	exit "$1"
 }
 
 # Standard function to test command error and exit if non-zero.
@@ -115,7 +116,7 @@ script_exit()
 std_cmd_err_handler()
 {
 	if (( $1 )); then
-		script_exit $1
+		script_exit "$1"
 	fi
 }
 
@@ -185,7 +186,7 @@ proc_CL()
 
 proc_CL "$@"
 
-gnulib-tool --import --dir=$basedir --source-base=src/prg/c/gen/lib \
+gnulib-tool --import --dir="$basedir" --source-base=src/prg/c/gen/lib \
 	--no-conditional-dependencies --no-libtool --no-vc-files configmake
 status=$?
 std_cmd_err_handler $status
