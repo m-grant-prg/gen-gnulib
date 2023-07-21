@@ -65,7 +65,6 @@
 # Init variables #
 ##################
 readonly version=1.0.4				# Script version
-readonly outputprefix="$(basename $0): "
 readonly packageversion=@pkgversion@		# Package version
 
 basedir="."
