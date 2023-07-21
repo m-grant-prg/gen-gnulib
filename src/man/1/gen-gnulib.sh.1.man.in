@@ -1,9 +1,10 @@
 NAME
 gen-gnulib.sh - gen-gnulib script
 SYNOPSIS
-gen-gnulib [OPTION] [ Project root directory ]
+gen-gnulib [OPTION] <Project root directory>
 DESCRIPTION
 A script to perform the initial generation of gnulib requirements.
+The project root directory is the location of configure.ac
 OPTIONS
 -h, --help prints usage information.
 
@@ -12,7 +13,7 @@ EXIT STATUS
 0
 if OK,
 
-1
+1 or 64
 on failure.
 
 AUTHOR
@@ -20,7 +21,7 @@ Written by Mark Grant.
 REPORTING BUGS
 Report bugs to <m.grant.prg@gmail.com>
 COPYRIGHT
-Copyright (C) 2018, 2021 Mark Grant
+Copyright (C) 2018, 2021, 2023 Mark Grant
 .br
 License GPLv3: GNU GPL version 3 only
 .br
