@@ -18,7 +18,8 @@
 #	A helper script to import gnulib modules.			#
 #									#
 # Syntax:	gen-gnulib.sh [ -h || --help ] || [ -V || --version ] \	#
-#				<Base Directory>			#
+#				<Base Directory> \			#
+#				<module 1> [ ... <module n> ]		#
 #									#
 # Exit codes used:-							#
 # Bash standard Exit Codes:	0 - success				#
@@ -57,9 +58,12 @@
 # 07/02/2018	MG	1.0.1	Created.				#
 # 19/10/2021	MG	1.0.2	Major overhaul.				#
 # 23/11/2021	MG	1.0.3	Tighten SPDX tag.			#
-# 21/07/2023	MG	1.0.4	Correct Purpose statement above.	#
+# 22/07/2023	MG	1.1.0	Correct Purpose statement above.	#
 #				Fix shellcheck warnings.		#
 #				Fix base directory handling.		#
+#				At least 2 non-option arguments, the	#
+#				base directory and at least 1 module	#
+#				name.					#
 #									#
 #########################################################################
 
@@ -67,10 +71,11 @@
 ##################
 # Init variables #
 ##################
-readonly version=1.0.4				# Script version
+readonly version=1.1.0				# Script version
 readonly packageversion=@pkgversion@		# Package version
 
 basedir="."
+modules=()
 
 
 #############
@@ -83,11 +88,12 @@ basedir="."
 usage ()
 {
 cat << EOF
-Usage is $0 [OPTIONS] <Base Directory>
+Usage is $0 [OPTIONS] <Base Directory> <Module 1> [ ... <Module n> ]
 	[OPTIONS] are:-
 	-h or --help Displays usage information
 	-V or --version Displays version information
 	Base Directory - Path to directory containing configure.ac
+	Module 1 [ ... Module n ] - 1 or more module names
 EOF
 }
 
@@ -177,14 +183,15 @@ proc_CL()
 	done
 
 	# First non-option arg is the base dir, where configure.ac is located.
-	if (( ! $# )); then
+	if (( $# < 2 )); then
 		msg="Base Directory must be specified as the first non-option"
-		msg+=" argument."
+		msg+=" argument followed by at least 1 module name."
 		output "$msg" 1
 		script_exit 64
 	fi
 	basedir=$1
 	shift
+	modules=( "$@" )
 }
 
 
@@ -195,7 +202,7 @@ proc_CL()
 proc_CL "$@"
 
 gnulib-tool --import --dir="$basedir" --source-base=src/prg/c/gen/lib \
-	--no-conditional-dependencies --no-libtool --no-vc-files configmake
+	--no-conditional-dependencies --no-libtool --no-vc-files "${modules[@]}"
 status=$?
 std_cmd_err_handler $status
 
