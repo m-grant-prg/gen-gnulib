@@ -1,3 +1,21 @@
+2023-07-23 v1.2.0 Mark Grant <m.grant.prg@gmail.com>
+	* at: Update Copyright for 2023
+      actions: Only install direct dependencies
+      actions: Run on ubuntu-latest
+      at: Allow for v1.1.1~rc1 version numbering
+      lxcu: Add in-file help text
+      at: Upgrade bootstrap.sh to v1.5.6
+      bash: man: Pass modules as non-option arguments
+      bash: Fix base directory handling
+      bash: Double quote to prevent globbing and word splitting.
+      bash: Remove unused variable
+      bash: Correct Purpose statement
+      git: Update mailmap to v1.0.3
+      git: Update gitignore to v1.0.11
+      git: Update gitattributes to v1.0.4
+      editors: Update editorconfig to v1.0.4
+      at: Use AC_CONFIG AUX_DIR
+
 2021-11-23 v1.1.1 Mark Grant <m.grant.prg@gmail.com>
 	* at: Add AC_COPYRIGHT macro
 	all: Tighten SPDX tags
