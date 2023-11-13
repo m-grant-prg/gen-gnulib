@@ -8,7 +8,6 @@
 
 #########################################################################
 #									#
-# Script ID: gen-gnulib.sh						#
 # Author: Copyright (C) 2018, 2021, 2023  Mark Grant			#
 #									#
 # Released under the GPLv3 only.					#
@@ -46,24 +45,6 @@
 #		None							#
 #									#
 # Further Info:								#
-#									#
-#########################################################################
-
-#########################################################################
-#									#
-# Changelog								#
-#									#
-# Date		Author	Version	Description				#
-#									#
-# 07/02/2018	MG	1.0.1	Created.				#
-# 19/10/2021	MG	1.0.2	Major overhaul.				#
-# 23/11/2021	MG	1.0.3	Tighten SPDX tag.			#
-# 22/07/2023	MG	1.1.0	Correct Purpose statement above.	#
-#				Fix shellcheck warnings.		#
-#				Fix base directory handling.		#
-#				At least 2 non-option arguments, the	#
-#				base directory and at least 1 module	#
-#				name.					#
 #									#
 #########################################################################
 

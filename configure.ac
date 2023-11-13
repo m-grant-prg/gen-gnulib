@@ -1,6 +1,5 @@
 #########################################################################
 #									#
-# Script ID: ./configure.ac						#
 # Author: Copyright (C) 2018, 2021-2023  Mark Grant			#
 #									#
 # Released under the GPLv3 only.					#
@@ -13,7 +12,6 @@
 # ./configure								#
 #									#
 # Layout: (Only relevant sections will exist).				#
-# ChangeLog : High level ChangeLog					#
 # SECTION  1: Initialisation & Setup					#
 # SECTION  2: Architecture, target and host checks			#
 # SECTION  3: Command line arguments					#
@@ -29,40 +27,6 @@
 # SECTION 13: Check for system services					#
 # SECTION 14: Additional checks & variables				#
 # SECTION 15: Specify the output files					#
-#									#
-#########################################################################
-
-#########################################################################
-#									#
-# Changelog								#
-#									#
-# Date		Author	Version	Description				#
-#									#
-# 07/02/2018	MG	1.0.1	Initial release.			#
-# 09/02/2018	MG	1.0.2	Shorten directory names to reduce	#
-#				overall path length.			#
-#				Update minimum AutoTools version.	#
-#				Standardise configure.ac and macro	#
-#				directory.				#
-# 27/04/2018	MG	1.0.3	Change package versioning to use	#
-#				hard-coded value. This is due to the	#
-#				use of github which produces source	#
-#				tarballs which can be used for package	#
-#				generation. These tarballs are used	#
-#				outside of git so git versioning is not	#
-#				possible, hence the hard-coded value.	#
-#				Because of this, other packaging should	#
-#				probably use the source tarball rather	#
-#				than a dist tarball.			#
-# 20/10/2021	MG	1.1.0	Re-vamp to new standard layout.		#
-# 23/11/2021	MG	1.1.1	If git is available and we are inside a	#
-#				git tree then use git describe to add	#
-#				further package version information.	#
-#				Tighten SPDX tag.			#
-#				Add AC_COPYRIGHT macro.			#
-# 09/10/2022	MG	1.1.2	Separate AutoTools generated files from	#
-#				project root.				#
-# 23/07/2023	MG	1.1.3	Update Copyright for 2023.		#
 #									#
 #########################################################################
 

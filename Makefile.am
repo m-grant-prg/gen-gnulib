@@ -1,6 +1,5 @@
 #########################################################################
 #									#
-# Script ID: ./Makefile.am						#
 # Author: Copyright (C) 2018, 2021, 2023  Mark Grant			#
 #									#
 # Released under the GPLv3 only.					#
@@ -8,41 +7,6 @@
 #									#
 # Purpose:								#
 # Automake script file to generate gen-gnulib project from source.	#
-#									#
-#########################################################################
-
-#########################################################################
-#									#
-# Changelog								#
-#									#
-# Date		Author	Version	Description				#
-#									#
-# 07/02/2018	MG	1.0.1	Initial release.			#
-# 09/02/2018	MG	1.0.2	Shorten directory names to reduce	#
-#				overall path length.			#
-# 27/04/2018	MG	1.0.3	Add srctarball target to build a source	#
-#				tarball in the build directory. Uses	#
-#				git archive to archive HEAD.		#
-# 10/06/2018	MG	1.0.4	Add info messages to srctarball target.	#
-# 31/10/2018	MG	1.0.5	Change srctarball target to build with	#
-#				src between package name and version in	#
-#				filename.				#
-# 20/10/2021	MG	1.0.6	Change source tarball name to be the	#
-#				same as that in GitHub releases. This	#
-#				aids integrating with rpm generation.	#
-#				Add install of standard GNU files like	#
-#				AUTHORS, etc.				#
-#				To enable make distcheck to work, any	#
-#				hard-coded paths requiring permissions	#
-#				such as /etc or fixed locations such as	#
-#				/usr/share/java must be accommodated,	#
-#				so set the configure flags to be used	#
-#				by make distcheck.			#
-#				Remove shebang.				#
-#				Add misc directory to DIST.		#
-# 23/11/2021	MG	1.0.7	Tighten SPDX tag.			#
-# 22/07/2023	MG	1.0.8	Enable use of v1.1.1~rc1 type vesrion	#
-#				numbers for source tarballs.		#
 #									#
 #########################################################################
 
