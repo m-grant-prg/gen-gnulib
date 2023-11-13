@@ -1,7 +1,9 @@
 NAME
 gen-gnulib.sh - gen-gnulib script
 SYNOPSIS
-gen-gnulib [OPTION] <Project root directory> <Module 1> [ ... <Module n> ]
+gen-gnulib.sh BASE_DIRECTORY MODULE [MODULE ...]
+gen-gnulib.sh {-h|-V}
+gen-gnulib.sh [OPTIONS]
 DESCRIPTION
 A script to perform the initial generation of gnulib requirements.
 The project root directory is the location of configure.ac. This is followed by
@@ -10,6 +12,10 @@ OPTIONS
 -h, --help prints usage information.
 
 -V, --version prints version information
+
+BASE_DIRECTORY - Path to directory containing configure.ac
+
+MODULE [MODULE ...] - 1 or more module names
 EXIT STATUS
 0
 if OK,
