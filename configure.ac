@@ -41,7 +41,7 @@ AC_COPYRIGHT([Copyright (C) 2018, 2021-2023  Mark Grant
 	      This script is free to copy or distribute under the terms set out
 	      in the package license. See COPYING for details.])
 
-AC_REVISION([$Revision: 1.1.3 $])
+AC_REVISION([$Revision: 1.2.0 $])
 
 AC_PREREQ([2.69])
 
