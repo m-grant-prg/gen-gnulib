@@ -171,11 +171,6 @@ if test "x$BASH" = "xno" ; then
 fi
 
 AC_MSG_NOTICE(checking for particular programs required at run time)
-AC_CHECK_PROG(GNULIB_TOOL, gnulib-tool, yes, no)
-if test "x$GNULIB_TOOL" = "xno" ; then
-	AC_MSG_WARN([gnulib-tool not found - needed at run time])
-fi
-
 AC_CHECK_PROG([CAT], [cat], [yes], [no])
 if test "x$CAT" = "xno" ; then
 	AC_MSG_WARN(cat not found - needed at run time)
@@ -184,6 +179,11 @@ fi
 AC_CHECK_PROG([GETOPT], [getopt], [yes], [no])
 if test "x$GETOPT" = "xno" ; then
 	AC_MSG_WARN(getopt not found - needed at run time)
+fi
+
+AC_CHECK_PROG(GNULIB_TOOL, gnulib-tool, yes, no)
+if test "x$GNULIB_TOOL" = "xno" ; then
+	AC_MSG_WARN([gnulib-tool not found - needed at run time])
 fi
 
 AC_CHECK_PROG(PRINTF, printf, yes, no)
