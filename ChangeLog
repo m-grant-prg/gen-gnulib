@@ -1,20 +1,58 @@
+2025-11-15 v1.4.0 Mark Grant <m.grant.prg@gmail.com>
+	* build(deps): bump actions/checkout from 4 to 5
+dependabot[bot] (1):
+
+	at: Upgrade bootstrap.sh to v1.6.2
+	at: Upgrade bootstrap.sh to v1.6.1
+	Merge pull request #2 from m-grant-prg/dependabot/github_actions/tip/actions/checkout-5
+	v1.4.0-rc1
+	actions: Run on Noble
+	actions: Set dependabot to target stable and old stable branches
+	at: Re-order program checks alphabetically
+	at: Update Copyright for 2025
+	actions: Fix trivial whitespace error
+	git: Correct reasoning in gitignore file
+	at: Update Copyright for 2024
+	git: Update mailmap to v1.0.4
+	git: Update gitignore to v1.0.12
+	git: Update gitattributes to v1.0.5
+	editors: Update editorconfig to v1.0.6
+Mark Grant (15):
+
+2023-11-14 v1.3.0 Mark Grant <m.grant.prg@gmail.com>
+	*  build(deps): bump actions/checkout from 2 to 4
+dependabot[bot] (1):
+
+	bash: Bump version number
+	at: Bump configure version number
+	man: Update CL syntax
+	bash: Improve CL syntax description
+	at: Improve CL syntax description
+	all: Remove most in-file ChangeLogs and versioning
+	git: Use standardised gitignore files
+	at: Upgrade bootstrap.sh to v1.6.0
+	at: Upgrade bootstrap.sh to v1.5.7
+	Merge pull request #1 from m-grant-prg/dependabot/github_actions/actions/checkout-4
+	github: Add dependabot version update config
+Mark Grant (11):
+
 2023-07-23 v1.2.0 Mark Grant <m.grant.prg@gmail.com>
 	* at: Update Copyright for 2023
-      actions: Only install direct dependencies
-      actions: Run on ubuntu-latest
-      at: Allow for v1.1.1~rc1 version numbering
-      lxcu: Add in-file help text
-      at: Upgrade bootstrap.sh to v1.5.6
-      bash: man: Pass modules as non-option arguments
-      bash: Fix base directory handling
-      bash: Double quote to prevent globbing and word splitting.
-      bash: Remove unused variable
-      bash: Correct Purpose statement
-      git: Update mailmap to v1.0.3
-      git: Update gitignore to v1.0.11
-      git: Update gitattributes to v1.0.4
-      editors: Update editorconfig to v1.0.4
-      at: Use AC_CONFIG AUX_DIR
+	actions: Only install direct dependencies
+	actions: Run on ubuntu-latest
+	at: Allow for v1.1.1~rc1 version numbering
+	lxcu: Add in-file help text
+	at: Upgrade bootstrap.sh to v1.5.6
+	bash: man: Pass modules as non-option arguments
+	bash: Fix base directory handling
+	bash: Double quote to prevent globbing and word splitting.
+	bash: Remove unused variable
+	bash: Correct Purpose statement
+	git: Update mailmap to v1.0.3
+	git: Update gitignore to v1.0.11
+	git: Update gitattributes to v1.0.4
+	editors: Update editorconfig to v1.0.4
+	at: Use AC_CONFIG AUX_DIR
 
 2021-11-23 v1.1.1 Mark Grant <m.grant.prg@gmail.com>
 	* at: Add AC_COPYRIGHT macro
