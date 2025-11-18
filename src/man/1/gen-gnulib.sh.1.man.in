@@ -1,21 +1,30 @@
 NAME
 gen-gnulib.sh - gen-gnulib script
 SYNOPSIS
-gen-gnulib.sh BASE_DIRECTORY MODULE [MODULE ...]
 gen-gnulib.sh {-h|-V}
+gen-gnulib.sh [-b BASE_DIRECTORY] MODULE [MODULE ...]
 gen-gnulib.sh [OPTIONS]
 DESCRIPTION
-A script to perform the initial generation of gnulib requirements.
-The project root directory is the location of configure.ac. This is followed by
-1 or more gnulib module names.
+A script to perform the initial generation of gnulib requirements. The module
+list is installed.
 OPTIONS
+-b, --base-dir BASE_DIRECTORY
+
 -h, --help prints usage information.
 
 -V, --version prints version information
 
-BASE_DIRECTORY - Path to directory containing configure.ac
+BASE_DIRECTORY - Absolute or relative path to project root (location of
+configure.ac) - The default is "."
 
 MODULE [MODULE ...] - 1 or more module names
+
+PROCESSING
+The script effectively performs:-
+
+gnulib-tool --import --dir="BASE_DIRECTORY" --source-base=src/prg/c/gen/lib \
+	--no-conditional-dependencies --no-libtool --no-vc-files \
+	MODULE [MODULE ...]
 EXIT STATUS
 0
 if OK,
@@ -28,7 +37,7 @@ Written by Mark Grant.
 REPORTING BUGS
 Report bugs to <m.grant.prg@gmail.com>
 COPYRIGHT
-Copyright (C) 2018, 2021, 2023 Mark Grant
+Copyright (C) 2018, 2021, 2023, 2025 Mark Grant
 .br
 License GPLv3: GNU GPL version 3 only
 .br
