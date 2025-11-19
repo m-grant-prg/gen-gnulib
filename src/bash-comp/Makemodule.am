@@ -1,0 +1,34 @@
+#########################################################################
+#									#
+# Author: Copyright (C) 2025  Mark Grant				#
+#									#
+# Released under the GPLv3 only.					#
+# SPDX-License-Identifier: GPL-3.0-only					#
+#									#
+# Purpose:								#
+# AutoMake script file to generate lxc utility scripts bash-completion	#
+# from source.								#
+#									#
+#########################################################################
+
+
+bashcompdir = $(datadir)/bash-completion/completions
+
+
+gen-gnulib.sh: Makefile
+	mkdir -p $(@D)
+	rm -f $@ $@.tmp
+	test -f ./$@.in || srcdir=$(srcdir)/; \
+	$(edit) $${srcdir}$(@F).in > $@.tmp
+	mv $@.tmp $@
+gen-gnulib.sh: $(srcdir)/gen-gnulib.sh.in
+
+
+bashcomp_DATA = gen-gnulib.sh
+
+
+EXTRA_DIST = $(srcdir)/gen-gnulib.sh.in
+
+
+CLEANFILES = *.tmp gen-gnulib.sh
+
