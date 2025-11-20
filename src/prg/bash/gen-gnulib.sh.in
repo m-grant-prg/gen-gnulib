@@ -190,9 +190,19 @@ proc_CL()
 
 proc_CL "$@"
 
+if [[ ! -d "$basedir" ]]; then
+	output "Invalid directory" 1
+	script_exit 64
+fi
+cd "$basedir"
+status=$?
+std_cmd_err_handler $status
 # N.B. --source-base is relative to --dir
-gnulib-tool --import --dir="$basedir" --source-base=src/prg/c/gen/lib \
+gnulib-tool --import --dir="." --source-base=src/prg/c/gen/lib \
 	--no-conditional-dependencies --no-libtool --no-vc-files "${modules[@]}"
+status=$?
+std_cmd_err_handler $status
+cd -
 status=$?
 std_cmd_err_handler $status
 
