@@ -1,3 +1,9 @@
+2025-11-20 v1.4.1 Mark Grant <m.grant.prg@gmail.com>
+	* bash: Run gnulib-tool command in project root
+	at: bash-comp: Add bash completion
+	bash: man: Make base directory a CL option
+Mark Grant (3):
+
 2025-11-15 v1.4.0 Mark Grant <m.grant.prg@gmail.com>
 	* build(deps): bump actions/checkout from 4 to 5
 dependabot[bot] (1):
