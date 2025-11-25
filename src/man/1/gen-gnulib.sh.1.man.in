@@ -1,8 +1,8 @@
 NAME
 gen-gnulib.sh - gen-gnulib script
 SYNOPSIS
-gen-gnulib.sh {-h|-V}
 gen-gnulib.sh [-b BASE_DIRECTORY] MODULE [MODULE ...]
+gen-gnulib.sh {-h|-V}
 gen-gnulib.sh [OPTIONS]
 DESCRIPTION
 A script to perform the initial generation of gnulib requirements. The module
