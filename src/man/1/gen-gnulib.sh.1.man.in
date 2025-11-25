@@ -22,9 +22,15 @@ MODULE [MODULE ...] - 1 or more module names
 PROCESSING
 The script effectively performs:-
 
-gnulib-tool --import --dir="BASE_DIRECTORY" --source-base=src/prg/c/gen/lib \
-	--no-conditional-dependencies --no-libtool --no-vc-files \
+.nf
+cd BASE_DIRECTORY
+gnulib-tool --import --dir="." --source-base=src/prg/c/gen/lib \\
+.RS
+--no-conditional-dependencies --no-libtool --no-vc-files \\
 	MODULE [MODULE ...]
+.RE
+cd -
+.fi
 EXIT STATUS
 0
 if OK,
