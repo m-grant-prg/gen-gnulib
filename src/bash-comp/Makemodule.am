@@ -6,8 +6,7 @@
 # SPDX-License-Identifier: GPL-3.0-only					#
 #									#
 # Purpose:								#
-# AutoMake script file to generate lxc utility scripts bash-completion	#
-# from source.								#
+# AutoMake script file to generate bash-completion from source.		#
 #									#
 #########################################################################
 
