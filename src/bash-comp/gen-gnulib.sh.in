@@ -1,7 +1,7 @@
 # shellcheck shell=bash
 #########################################################################
 #									#
-# Author: Copyright (C) 2025  Mark Grant				#
+# Author: Copyright (C) 2025, 2026  Mark Grant				#
 #									#
 # Released under the GPLv3 only.					#
 # SPDX-License-Identifier: GPL-3.0-only					#
@@ -21,10 +21,11 @@ _gen_gnulib.sh()
 	prev="${COMP_WORDS[COMP_CWORD-1]}"
 	case $prev in
 	-b|--base-dir)
-		OPTS=$(ls -d . .. ./*/)
+		local IFS=$'\n'
+		compopt -o filenames
 		# shellcheck disable=SC2207  # This is _the_ bash completion
 		# pattern, so leave it be.
-		COMPREPLY=($(compgen -W "${OPTS[*]}" -- "$cur"))
+		COMPREPLY=( $(compgen -d -- "${cur}") )
 		return 0
 		;;
 	esac
