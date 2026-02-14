@@ -1,3 +1,18 @@
+2026-02-14 v1.4.2 Mark Grant <m.grant.prg@gmail.com>
+	* build(deps): bump actions/checkout from 5 to 6
+dependabot[bot] (1):
+
+	bash-comp: Use built-in method of listing directories
+	at: Upgrade bootstrap.sh to v1.7.0
+	at: Add sign_tarball target
+	at: Leave source tarball name same as distribution tarball
+	at: Update Copyright for 2026
+	bash-comp: Correct copy and paste error
+	man: Correct effective processing description
+	bash: man: Order options alphabetically
+	Merge pull request #4 from m-grant-prg/dependabot/github_actions/tip/actions/checkout-6
+Mark Grant (9):
+
 2025-11-20 v1.4.1 Mark Grant <m.grant.prg@gmail.com>
 	* bash: Run gnulib-tool command in project root
 	at: bash-comp: Add bash completion

@@ -1,3 +1,7 @@
+Release 1.4.2 2026-02-14
+No user visible changes.
+Technical changes can be found in the ChangeLog.
+
 Release 1.4.1 2025-11-20
 Make the base directory a command line option.
 Add bash completion.
