@@ -1,3 +1,11 @@
+2026-05-27 v1.4.3 Mark Grant <m.grant.prg@gmail.com>
+	* bash: Silence shellcheck warning function never invoked
+	bash: Suppress shellcheck warnings around changing directory and back
+	at: Add distro info for Installation Directories
+	at: Upgrade bootstrap.sh to v1.7.1
+	at: Remove old signature file before creating a new one
+Mark Grant (5):
+
 2026-02-14 v1.4.2 Mark Grant <m.grant.prg@gmail.com>
 	* build(deps): bump actions/checkout from 5 to 6
 dependabot[bot] (1):
