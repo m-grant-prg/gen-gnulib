@@ -8,7 +8,7 @@
 
 #########################################################################
 #									#
-# Author: Copyright (C) 2018, 2021, 2023, 2025  Mark Grant		#
+# Author: Copyright (C) 2018, 2021, 2023, 2025, 2026  Mark Grant	#
 #									#
 # Released under the GPLv3 only.					#
 # SPDX-License-Identifier: GPL-3.0-only					#
@@ -50,7 +50,7 @@
 ##################
 # Init variables #
 ##################
-readonly version=1.3.1				# Script version
+readonly version=1.3.2				# Script version
 readonly packageversion=@pkgversion@		# Package version
 
 basedir="."
@@ -194,6 +194,7 @@ if [[ ! -d "$basedir" ]]; then
 	output "Invalid directory" 1
 	script_exit 64
 fi
+# shellcheck disable=SC2164 # cd failure covered by std_cmd_err_handler.
 cd "$basedir"
 status=$?
 std_cmd_err_handler $status
@@ -202,6 +203,9 @@ gnulib-tool --import --dir="." --source-base=src/prg/c/gen/lib \
 	--no-conditional-dependencies --no-libtool --no-vc-files "${modules[@]}"
 status=$?
 std_cmd_err_handler $status
+# cd failure covered by std_cmd_err_handler.
+# Cannot use subshell as using the standard error function
+# shellcheck disable=SC2164,2103
 cd -
 status=$?
 std_cmd_err_handler $status
