@@ -1,3 +1,8 @@
+2026-05-29 v1.4.4 Mark Grant <m.grant.prg@gmail.com>
+	* at: Upgrade bootstrap.sh to v1.7.2
+	bash: Fix shellcheck disable code (Add SC)
+Mark Grant (2):
+
 2026-05-27 v1.4.3 Mark Grant <m.grant.prg@gmail.com>
 	* bash: Silence shellcheck warning function never invoked
 	bash: Suppress shellcheck warnings around changing directory and back
