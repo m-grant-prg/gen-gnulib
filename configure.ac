@@ -50,7 +50,7 @@ AC_COPYRIGHT([Copyright (C) 2018, 2021-2026  Mark Grant
 	      This script is free to copy or distribute under the terms set out
 	      in the package license. See COPYING for details.])
 
-AC_REVISION([$Revision: 1.2.5 $])
+AC_REVISION([$Revision: 1.2.6 $])
 
 AC_PREREQ([2.69])
 
@@ -324,8 +324,8 @@ AC_MSG_NOTICE(processing additional checks and variables)
 #					${libexecdir}/${PACKAGE}
 #
 AC_SUBST([edit], ["$SED \
-		-e 's|@topsrcdir[@]|\$(top_srcdir)|g' \
-		-e 's|@topbuilddir[@]|\$(top_builddir)|g' \
+		-e 's|@abstopsrcdir[@]|\$(abs_top_srcdir)|g' \
+		-e 's|@abstopbuilddir[@]|\$(abs_top_builddir)|g' \
 		-e 's|@bashlocation[@]|\$(BASH)|g' \
 		-e 's|@pkgversion[@]|\$(pkgversion)|g' \
 		-e 's|@prefix[@]|\$(prefix)|g' \
