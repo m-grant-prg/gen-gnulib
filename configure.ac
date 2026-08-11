@@ -190,11 +190,6 @@ if test "x$ECHO" = "xno" ; then
 	AC_MSG_ERROR(echo not found - needed at run time)
 fi
 
-AC_PATH_PROG([ENV], [env], [no])
-if test "x$ENV" = "xno" ; then
-	AC_MSG_ERROR([env not found])
-fi
-
 AC_CHECK_PROG([SHELLCHECK], [shellcheck], [yes], [no])
 if test "x$SHELLCHECK" = "xno" ; then
 	AC_MSG_ERROR([shellcheck not found])
@@ -219,6 +214,11 @@ AC_MSG_NOTICE(checking for particular programs required at build and run time)
 AC_PATH_PROG([BASH], [bash], [no])
 if test "x$BASH" = "xno" ; then
 	AC_MSG_ERROR([bash not found])
+fi
+
+AC_PATH_PROG([ENV], [env], [no])
+if test "x$ENV" = "xno" ; then
+	AC_MSG_ERROR([env not found])
 fi
 
 AC_MSG_NOTICE(checking for particular programs required at run time)
