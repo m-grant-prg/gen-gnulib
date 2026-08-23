@@ -1,3 +1,26 @@
+2026-08-23 v1.4.5 Mark Grant <m.grant.prg@gmail.com>
+	* build(deps): bump actions/upload-artifact from 4 to 7
+	build(deps): bump actions/checkout from 6 to 7
+dependabot[bot] (2):
+
+	tests: Move tree-wide tests to appropriate level in tree
+	at: Place the env PATH check in build and run time section
+	Merge pull request #8 from m-grant-prg/dependabot/github_actions/tip/actions/upload-artifact-7
+	at: bash: tests: Use @envlocation@ bash for bash shebang
+	tests: Upgrade shellcheck tests to v1.0.1
+	at: Upgrade bootstrap.sh to v1.7.4
+	actions: Upload test logs on failure
+	lxcu: Add shellcheck to container install list
+	at: Add check for shellcheck
+	tests: Upgrade run-shellcheck.sh to v1.0.0
+	at: Upgrade bootstrap.sh to v1.7.3
+	tests: Correct copy and paste oversight
+	tests: Fix shellcheck warning prefer double quotes
+	tests: Add shellcheck test
+	at: Use $SED from AutoTools AOT hardcoding sed
+	Merge pull request #7 from m-grant-prg/dependabot/github_actions/tip/actions/checkout-7
+Mark Grant (16):
+
 2026-05-29 v1.4.4 Mark Grant <m.grant.prg@gmail.com>
 	* at: Upgrade bootstrap.sh to v1.7.2
 	bash: Fix shellcheck disable code (Add SC)
